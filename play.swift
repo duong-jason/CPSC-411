@@ -1,13 +1,21 @@
 #!/usr/bin/swift
 
 class SuperClass {
-    
+    var a: UInt32
+    var b: Float
+
+    init(a: UInt32, b: Float) {
+        self.a = a
+        self.b = b
+    }
+
+    func foo() {
+        print("yes")
+    }
 }
 
 class DerivedClass: SuperClass {
-    var a: UInt32 = 10
-    var b: Float = 0.5
-    var c: Double = 3.14
+    var c: Double
     var d: Bool = true
     var e: String? = "string"
 
@@ -18,14 +26,25 @@ class DerivedClass: SuperClass {
         multi-line string
     """
 
-    init(a: UInt32, b: String?) {
-    }
-
-    init(a: UInt32) {
+    override init(a: UInt32, b: Float) {
+        self.c = 3.14
+        super.init(a: a, b: b)
     }
 
     deinit {
         print("destroyed object") 
+    }
+
+    var check: Bool {
+        get {
+            return d
+        }
+
+        set(cond) {
+            if var e = e, d {
+                e = "ok"
+            }
+        }
     }
 
     func displayState() -> Void {
@@ -74,6 +93,11 @@ class DerivedClass: SuperClass {
         }
     }
 
+    override func foo() {
+        super.foo()
+        print("override")
+    }
+
     class func range(start: Int, end: Int) {
         for i in start...end {
             print(i)
@@ -98,11 +122,22 @@ class DerivedClass: SuperClass {
 
 ///////////////////////////////////////////////////////////////////////
 
-let object = DerivedClass(a: 5, b: "name")
+func scope() {
+    let master = SuperClass(a: 5, b: 32.3)
+    let object = DerivedClass(a: 5, b: 10.54)
 
-DerivedClass.range(start: 1, end: 3)
-DerivedClass.choose(an: 8)
+    DerivedClass.range(start: 1, end: 3)
+    DerivedClass.choose(an: 8)
 
-object.displayState()
-object.linearSearch(20)
-object.binarySearch(at: -1)
+    object.displayState()
+    object.linearSearch(20)
+    object.binarySearch(at: -1)
+    print("object.check = \(object.check)")
+    object.check = false
+    print("object.check = \(object.check)")
+    
+    master.foo()
+    object.foo()
+}
+
+scope()
