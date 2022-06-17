@@ -27,7 +27,7 @@ class VolunteerManagerTests: XCTestCase {
         manager.volunteer("Paul", for: -1)
             
         // Check if Paul is not in the dictionary
-        XCTAssertNil(manager.volunteers["Rick"])
+        XCTAssertNil(manager.volunteers["Paul"])
     }
     
     func testAddValidExceedHours() {
