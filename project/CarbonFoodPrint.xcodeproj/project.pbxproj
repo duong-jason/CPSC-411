@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28686166286AB58900E4446E /* BarcodeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28686165286AB58800E4446E /* BarcodeMenu.swift */; };
+		7A15598F286BDFE1007F83B5 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A15598E286BDFE1007F83B5 /* Navigation.swift */; };
+		7A155999286C3BB4007F83B5 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A155998286C3BB4007F83B5 /* SideMenu.swift */; };
+		7A15599B286C40FF007F83B5 /* SearchAlternativeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A15599A286C40FF007F83B5 /* SearchAlternativeViewModel.swift */; };
+		7A1C0066286C022200596ABB /* ProductInfoDisplays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1C0065286C022200596ABB /* ProductInfoDisplays.swift */; };
+		7A1C0068286C551D00596ABB /* BarcodeFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1C0067286C551D00596ABB /* BarcodeFeature.swift */; };
+		7A3F36242869A98C0030B58F /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F36232869A98C0030B58F /* SearchResults.swift */; };
+		7A4206BE286AD36400D1AA29 /* DataPersistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4206BD286AD36400D1AA29 /* DataPersistance.swift */; };
+		7A5DAC79285837D2009C3528 /* HamburgerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5DAC78285837D2009C3528 /* HamburgerMenu.swift */; };
+		7C10542C28586BE20030CB3B /* DailyReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C10542B28586BE20030CB3B /* DailyReport.swift */; };
+		7C105430286C660C0030CB3B /* DailyContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C10542F286C660C0030CB3B /* DailyContent.swift */; };
+		ACD51EAC286A278600178C28 /* DailyReportViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD51EAB286A278600178C28 /* DailyReportViews.swift */; };
+		ACD51EAE286AC9AA00178C28 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD51EAD286AC9AA00178C28 /* MainView.swift */; };
+		C414608D285D7835002A72F5 /* DisplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C414608C285D7835002A72F5 /* DisplayManager.swift */; };
+		C41D810028695B6E00498E02 /* DisplayGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41D80FF28695B6200498E02 /* DisplayGraph.swift */; };
+		C44AD81D28511E9E004A8A11 /* CarbonFoodPrintApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44AD81C28511E9E004A8A11 /* CarbonFoodPrintApp.swift */; };
+		C44AD81F28511E9E004A8A11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44AD81E28511E9E004A8A11 /* ContentView.swift */; };
+		C44AD82128511E9F004A8A11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C44AD82028511E9F004A8A11 /* Assets.xcassets */; };
+		C44AD82428511E9F004A8A11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C44AD82328511E9F004A8A11 /* Preview Assets.xcassets */; };
+		C44AD82E28511E9F004A8A11 /* CarbonFoodPrintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44AD82D28511E9F004A8A11 /* CarbonFoodPrintTests.swift */; };
+		C44AD83828511E9F004A8A11 /* CarbonFoodPrintUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44AD83728511E9F004A8A11 /* CarbonFoodPrintUITests.swift */; };
+		C44AD83A28511E9F004A8A11 /* CarbonFoodPrintUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44AD83928511E9F004A8A11 /* CarbonFoodPrintUITestsLaunchTests.swift */; };
+		C49F2ADA2869BA2B00F62C36 /* DisplayShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49F2AD92869BA2B00F62C36 /* DisplayShape.swift */; };
+		C4DB971C285127C100D25BA8 /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DB971B285127C100D25BA8 /* DisplayView.swift */; };
+		C4FE48E82868D9EF0037BCD2 /* DisplayModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FE48E72868D9EF0037BCD2 /* DisplayModifier.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C44AD82A28511E9F004A8A11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C44AD81128511E9E004A8A11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C44AD81828511E9E004A8A11;
+			remoteInfo = CarbonFoodPrint;
+		};
+		C44AD83428511E9F004A8A11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C44AD81128511E9E004A8A11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C44AD81828511E9E004A8A11;
+			remoteInfo = CarbonFoodPrint;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28686165286AB58800E4446E /* BarcodeMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeMenu.swift; sourceTree = "<group>"; };
+		7A15598E286BDFE1007F83B5 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		7A155998286C3BB4007F83B5 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		7A15599A286C40FF007F83B5 /* SearchAlternativeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAlternativeViewModel.swift; sourceTree = "<group>"; };
+		7A1C0065286C022200596ABB /* ProductInfoDisplays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfoDisplays.swift; sourceTree = "<group>"; };
+		7A1C0067286C551D00596ABB /* BarcodeFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeFeature.swift; sourceTree = "<group>"; };
+		7A3F36232869A98C0030B58F /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
+		7A4206BD286AD36400D1AA29 /* DataPersistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistance.swift; sourceTree = "<group>"; };
+		7A5DAC78285837D2009C3528 /* HamburgerMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerMenu.swift; sourceTree = "<group>"; };
+		7C10542B28586BE20030CB3B /* DailyReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReport.swift; sourceTree = "<group>"; };
+		7C10542F286C660C0030CB3B /* DailyContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyContent.swift; sourceTree = "<group>"; };
+		ACD51EAB286A278600178C28 /* DailyReportViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportViews.swift; sourceTree = "<group>"; };
+		ACD51EAD286AC9AA00178C28 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C414608C285D7835002A72F5 /* DisplayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayManager.swift; sourceTree = "<group>"; };
+		C41D80FF28695B6200498E02 /* DisplayGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayGraph.swift; sourceTree = "<group>"; };
+		C44AD81928511E9E004A8A11 /* CarbonFoodPrint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarbonFoodPrint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C44AD81C28511E9E004A8A11 /* CarbonFoodPrintApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonFoodPrintApp.swift; sourceTree = "<group>"; };
+		C44AD81E28511E9E004A8A11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C44AD82028511E9F004A8A11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C44AD82328511E9F004A8A11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C44AD82928511E9F004A8A11 /* CarbonFoodPrintTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarbonFoodPrintTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C44AD82D28511E9F004A8A11 /* CarbonFoodPrintTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonFoodPrintTests.swift; sourceTree = "<group>"; };
+		C44AD83328511E9F004A8A11 /* CarbonFoodPrintUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarbonFoodPrintUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C44AD83728511E9F004A8A11 /* CarbonFoodPrintUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonFoodPrintUITests.swift; sourceTree = "<group>"; };
+		C44AD83928511E9F004A8A11 /* CarbonFoodPrintUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonFoodPrintUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C49F2AD92869BA2B00F62C36 /* DisplayShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayShape.swift; sourceTree = "<group>"; };
+		C4DB971B285127C100D25BA8 /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
+		C4FE48E72868D9EF0037BCD2 /* DisplayModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayModifier.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C44AD81628511E9E004A8A11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C44AD82628511E9F004A8A11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C44AD83028511E9F004A8A11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C44AD81028511E9E004A8A11 = {
+			isa = PBXGroup;
+			children = (
+				C44AD81B28511E9E004A8A11 /* CarbonFoodPrint */,
+				C44AD82C28511E9F004A8A11 /* CarbonFoodPrintTests */,
+				C44AD83628511E9F004A8A11 /* CarbonFoodPrintUITests */,
+				C44AD81A28511E9E004A8A11 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C44AD81A28511E9E004A8A11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C44AD81928511E9E004A8A11 /* CarbonFoodPrint.app */,
+				C44AD82928511E9F004A8A11 /* CarbonFoodPrintTests.xctest */,
+				C44AD83328511E9F004A8A11 /* CarbonFoodPrintUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C44AD81B28511E9E004A8A11 /* CarbonFoodPrint */ = {
+			isa = PBXGroup;
+			children = (
+				7A1C0065286C022200596ABB /* ProductInfoDisplays.swift */,
+				C44AD81C28511E9E004A8A11 /* CarbonFoodPrintApp.swift */,
+				28686165286AB58800E4446E /* BarcodeMenu.swift */,
+				7A1C0067286C551D00596ABB /* BarcodeFeature.swift */,
+				7A4206BD286AD36400D1AA29 /* DataPersistance.swift */,
+				7A3F36232869A98C0030B58F /* SearchResults.swift */,
+				7A155998286C3BB4007F83B5 /* SideMenu.swift */,
+				7A15598E286BDFE1007F83B5 /* Navigation.swift */,
+				7A15599A286C40FF007F83B5 /* SearchAlternativeViewModel.swift */,
+				C44AD81E28511E9E004A8A11 /* ContentView.swift */,
+				7C10542F286C660C0030CB3B /* DailyContent.swift */,
+				7A5DAC78285837D2009C3528 /* HamburgerMenu.swift */,
+				ACD51EAD286AC9AA00178C28 /* MainView.swift */,
+				ACD51EAB286A278600178C28 /* DailyReportViews.swift */,
+				7C10542B28586BE20030CB3B /* DailyReport.swift */,
+				C44AD82028511E9F004A8A11 /* Assets.xcassets */,
+				C44AD82228511E9F004A8A11 /* Preview Content */,
+				C4DB971B285127C100D25BA8 /* DisplayView.swift */,
+				C41D80FF28695B6200498E02 /* DisplayGraph.swift */,
+				C49F2AD92869BA2B00F62C36 /* DisplayShape.swift */,
+				C414608C285D7835002A72F5 /* DisplayManager.swift */,
+				C4FE48E72868D9EF0037BCD2 /* DisplayModifier.swift */,
+			);
+			path = CarbonFoodPrint;
+			sourceTree = "<group>";
+		};
+		C44AD82228511E9F004A8A11 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C44AD82328511E9F004A8A11 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C44AD82C28511E9F004A8A11 /* CarbonFoodPrintTests */ = {
+			isa = PBXGroup;
+			children = (
+				C44AD82D28511E9F004A8A11 /* CarbonFoodPrintTests.swift */,
+			);
+			path = CarbonFoodPrintTests;
+			sourceTree = "<group>";
+		};
+		C44AD83628511E9F004A8A11 /* CarbonFoodPrintUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C44AD83728511E9F004A8A11 /* CarbonFoodPrintUITests.swift */,
+				C44AD83928511E9F004A8A11 /* CarbonFoodPrintUITestsLaunchTests.swift */,
+			);
+			path = CarbonFoodPrintUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C44AD81828511E9E004A8A11 /* CarbonFoodPrint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C44AD83D28511E9F004A8A11 /* Build configuration list for PBXNativeTarget "CarbonFoodPrint" */;
+			buildPhases = (
+				C44AD81528511E9E004A8A11 /* Sources */,
+				C44AD81628511E9E004A8A11 /* Frameworks */,
+				C44AD81728511E9E004A8A11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarbonFoodPrint;
+			productName = CarbonFoodPrint;
+			productReference = C44AD81928511E9E004A8A11 /* CarbonFoodPrint.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C44AD82828511E9F004A8A11 /* CarbonFoodPrintTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C44AD84028511E9F004A8A11 /* Build configuration list for PBXNativeTarget "CarbonFoodPrintTests" */;
+			buildPhases = (
+				C44AD82528511E9F004A8A11 /* Sources */,
+				C44AD82628511E9F004A8A11 /* Frameworks */,
+				C44AD82728511E9F004A8A11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C44AD82B28511E9F004A8A11 /* PBXTargetDependency */,
+			);
+			name = CarbonFoodPrintTests;
+			productName = CarbonFoodPrintTests;
+			productReference = C44AD82928511E9F004A8A11 /* CarbonFoodPrintTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C44AD83228511E9F004A8A11 /* CarbonFoodPrintUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C44AD84328511E9F004A8A11 /* Build configuration list for PBXNativeTarget "CarbonFoodPrintUITests" */;
+			buildPhases = (
+				C44AD82F28511E9F004A8A11 /* Sources */,
+				C44AD83028511E9F004A8A11 /* Frameworks */,
+				C44AD83128511E9F004A8A11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C44AD83528511E9F004A8A11 /* PBXTargetDependency */,
+			);
+			name = CarbonFoodPrintUITests;
+			productName = CarbonFoodPrintUITests;
+			productReference = C44AD83328511E9F004A8A11 /* CarbonFoodPrintUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C44AD81128511E9E004A8A11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					C44AD81828511E9E004A8A11 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					C44AD82828511E9F004A8A11 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = C44AD81828511E9E004A8A11;
+					};
+					C44AD83228511E9F004A8A11 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = C44AD81828511E9E004A8A11;
+					};
+				};
+			};
+			buildConfigurationList = C44AD81428511E9E004A8A11 /* Build configuration list for PBXProject "CarbonFoodPrint" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C44AD81028511E9E004A8A11;
+			productRefGroup = C44AD81A28511E9E004A8A11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C44AD81828511E9E004A8A11 /* CarbonFoodPrint */,
+				C44AD82828511E9F004A8A11 /* CarbonFoodPrintTests */,
+				C44AD83228511E9F004A8A11 /* CarbonFoodPrintUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C44AD81728511E9E004A8A11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C44AD82428511E9F004A8A11 /* Preview Assets.xcassets in Resources */,
+				C44AD82128511E9F004A8A11 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C44AD82728511E9F004A8A11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C44AD83128511E9F004A8A11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C44AD81528511E9E004A8A11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28686166286AB58900E4446E /* BarcodeMenu.swift in Sources */,
+				C44AD81F28511E9E004A8A11 /* ContentView.swift in Sources */,
+				7A1C0066286C022200596ABB /* ProductInfoDisplays.swift in Sources */,
+				7A1C0068286C551D00596ABB /* BarcodeFeature.swift in Sources */,
+				C414608D285D7835002A72F5 /* DisplayManager.swift in Sources */,
+				C49F2ADA2869BA2B00F62C36 /* DisplayShape.swift in Sources */,
+				7A15599B286C40FF007F83B5 /* SearchAlternativeViewModel.swift in Sources */,
+				C44AD81F28511E9E004A8A11 /* ContentView.swift in Sources */,
+				C41D810028695B6E00498E02 /* DisplayGraph.swift in Sources */,
+				C4FE48E82868D9EF0037BCD2 /* DisplayModifier.swift in Sources */,
+				7C10542C28586BE20030CB3B /* DailyReport.swift in Sources */,
+				ACD51EAC286A278600178C28 /* DailyReportViews.swift in Sources */,
+				ACD51EAE286AC9AA00178C28 /* MainView.swift in Sources */,
+				C44AD81D28511E9E004A8A11 /* CarbonFoodPrintApp.swift in Sources */,
+				C4DB971C285127C100D25BA8 /* DisplayView.swift in Sources */,
+				7A4206BE286AD36400D1AA29 /* DataPersistance.swift in Sources */,
+				7A155999286C3BB4007F83B5 /* SideMenu.swift in Sources */,
+				7C105430286C660C0030CB3B /* DailyContent.swift in Sources */,
+				7A5DAC79285837D2009C3528 /* HamburgerMenu.swift in Sources */,
+				7A15598F286BDFE1007F83B5 /* Navigation.swift in Sources */,
+				7A3F36242869A98C0030B58F /* SearchResults.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C44AD82528511E9F004A8A11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C44AD82E28511E9F004A8A11 /* CarbonFoodPrintTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C44AD82F28511E9F004A8A11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C44AD83828511E9F004A8A11 /* CarbonFoodPrintUITests.swift in Sources */,
+				C44AD83A28511E9F004A8A11 /* CarbonFoodPrintUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C44AD82B28511E9F004A8A11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C44AD81828511E9E004A8A11 /* CarbonFoodPrint */;
+			targetProxy = C44AD82A28511E9F004A8A11 /* PBXContainerItemProxy */;
+		};
+		C44AD83528511E9F004A8A11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C44AD81828511E9E004A8A11 /* CarbonFoodPrint */;
+			targetProxy = C44AD83428511E9F004A8A11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C44AD83B28511E9F004A8A11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C44AD83C28511E9F004A8A11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C44AD83E28511E9F004A8A11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CarbonFoodPrint/Preview Content\"";
+				DEVELOPMENT_TEAM = YU6M9S6HTK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jason.CarbonFoodPrint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C44AD83F28511E9F004A8A11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CarbonFoodPrint/Preview Content\"";
+				DEVELOPMENT_TEAM = YU6M9S6HTK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jason.CarbonFoodPrint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C44AD84128511E9F004A8A11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NX8JK7B3KV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jason.CarbonFoodPrintTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarbonFoodPrint.app/CarbonFoodPrint";
+			};
+			name = Debug;
+		};
+		C44AD84228511E9F004A8A11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NX8JK7B3KV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jason.CarbonFoodPrintTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarbonFoodPrint.app/CarbonFoodPrint";
+			};
+			name = Release;
+		};
+		C44AD84428511E9F004A8A11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NX8JK7B3KV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jason.CarbonFoodPrintUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CarbonFoodPrint;
+			};
+			name = Debug;
+		};
+		C44AD84528511E9F004A8A11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NX8JK7B3KV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jason.CarbonFoodPrintUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CarbonFoodPrint;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C44AD81428511E9E004A8A11 /* Build configuration list for PBXProject "CarbonFoodPrint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C44AD83B28511E9F004A8A11 /* Debug */,
+				C44AD83C28511E9F004A8A11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C44AD83D28511E9F004A8A11 /* Build configuration list for PBXNativeTarget "CarbonFoodPrint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C44AD83E28511E9F004A8A11 /* Debug */,
+				C44AD83F28511E9F004A8A11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C44AD84028511E9F004A8A11 /* Build configuration list for PBXNativeTarget "CarbonFoodPrintTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C44AD84128511E9F004A8A11 /* Debug */,
+				C44AD84228511E9F004A8A11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C44AD84328511E9F004A8A11 /* Build configuration list for PBXNativeTarget "CarbonFoodPrintUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C44AD84428511E9F004A8A11 /* Debug */,
+				C44AD84528511E9F004A8A11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C44AD81128511E9E004A8A11 /* Project object */;
+}
